@@ -25,18 +25,11 @@ public class RightScaleSwitch {
 				
 			case 3:
 				us.goStraight(3000, -30, 0.6); //3500?
-				us.autoTimer.reset();
+				us.autoPauseTimer.reset();
 				break;
 				
 			case 4:
-				if(us.autoTimer.get() > 1)
-				{
-					us.autoStep = 5;
-				}
-				else
-				{
-					us.driveRobot(0,0);
-				}
+				us.pause(1);
 				break;
 			
 			case 5:
@@ -49,18 +42,11 @@ public class RightScaleSwitch {
 				
 			case 7:
 				us.turnToAngle(-180, 0.6);
-				us.autoTimer.reset();
+				us.autoPauseTimer.reset();
 				break;
 				
 			case 8:
-				if(us.autoTimer.get() > 1)
-				{
-					us.autoStep = 9;
-				}
-				else
-				{
-					us.driveRobot(0,0);
-				}
+				us.pause(1);
 				break;
 				
 			case 9:
