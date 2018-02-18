@@ -56,7 +56,7 @@ public class CenterLeftSwitchThenCube
 			break;
 			
 		case 7: 
-			us.turnToAngle(90, 0.6);
+			us.autoPIDTurn(90);
 			break;
 			
 		case 8:

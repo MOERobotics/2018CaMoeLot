@@ -16,14 +16,15 @@ public class RightScaleSwitch {
 			case 2:
 				if (us.navX.getYaw() < -27) { //-30?
 					us.driveRobot(0, 0);
-					us.autoStep = 2;
+					us.autoStep = 3;
 				}
-				else 
-					us.driveRobot(0, 0.6);
+				else {
+					us.driveRobot(0, 0.6); 
+				}
 				break;
 				
 			case 3:
-				us.goStraight(3500, -30, 0.6); //3500?
+				us.goStraight(3000, -30, 0.6); //3500?
 				us.autoTimer.reset();
 				break;
 				
@@ -39,7 +40,7 @@ public class RightScaleSwitch {
 				break;
 			
 			case 5:
-				us.turnToAngle(-150, 0.6);
+				us.autoPIDTurn(-150);
 				break;
 				
 			case 6:
