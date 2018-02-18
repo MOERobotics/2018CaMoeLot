@@ -10,7 +10,7 @@ public class RightScaleSwitch {
 		switch (us.autoStep) {
 		
 			case 1:
-				us.autoPIDStraight(23000, 0, 0.7);
+				us.autoPIDStraight(17.4 * FEET, 0, 0.7);
 				break;
 				
 			case 2:
@@ -24,7 +24,7 @@ public class RightScaleSwitch {
 				break;
 				
 			case 3:
-				us.autoPIDStraight(3000, -27, 0.6); //3500?
+				us.autoPIDStraight(2.27 * FEET, -27, 0.6); //3500?
 				us.autoTimer.reset();
 				break;
 				
@@ -41,7 +41,7 @@ public class RightScaleSwitch {
 				break;
 				
 			case 6:
-				us.autoPIDStraight(5100, -120, 0.6); //4800 to 5100
+				us.autoPIDStraight(3.86 * FEET, -120, 0.6); //4800 to 5100
 				break;
 				
 			case 7:
@@ -59,7 +59,7 @@ public class RightScaleSwitch {
 				break;
 				
 			case 9:
-				us.autoPIDStraight(2400, -180, 0.5); //maybe change the 2400??
+				us.autoPIDStraight(1.82 * FEET, -180, 0.5); //maybe change the 2400??
 				break;
 				
 		
