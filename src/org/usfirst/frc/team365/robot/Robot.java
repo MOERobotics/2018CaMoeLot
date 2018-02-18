@@ -222,6 +222,7 @@ public class Robot extends TimedRobot {
 		case 4:
 			RightScaleSwitch.run(this);
 			//CenterLeftSwitchThenCube.run(this);
+			break;
 		case 5:
 			GoStraightAutonomous.autoGoStraightTurnTest(this);
 			break;
@@ -413,6 +414,7 @@ public class Robot extends TimedRobot {
 			onCount++;
 			if (onCount > 3) {
 				autoStep++;
+				autoPauseTimer.reset();
 				driveRobot(0,0);
 				newPID = true;
 			}
