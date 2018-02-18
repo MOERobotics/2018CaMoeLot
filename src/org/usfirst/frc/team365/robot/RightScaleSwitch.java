@@ -10,15 +10,20 @@ public class RightScaleSwitch {
 		switch (us.autoStep) {
 		
 			case 1:
-				us.goStraight(23000, 0, 0.6);
+				us.goStraight(23000, 0, 0.7);
 				break;
 				
 			case 2:
-				us.turnToAngle(-30, 0.6);
+				if (us.navX.getYaw() < -27) { //-30?
+					us.driveRobot(0, 0);
+					us.autoStep = 2;
+				}
+				else 
+					us.driveRobot(0, 0.6);
 				break;
 				
 			case 3:
-				us.goStraight(3500, -30, 0.6);
+				us.goStraight(3500, -30, 0.6); //3500?
 				us.autoTimer.reset();
 				break;
 				
