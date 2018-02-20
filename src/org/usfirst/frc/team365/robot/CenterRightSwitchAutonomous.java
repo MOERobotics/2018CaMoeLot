@@ -1,5 +1,7 @@
 package org.usfirst.frc.team365.robot;
 
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 public class CenterRightSwitchAutonomous {
 	public static final double INCHES = Robot.INCHES_TO_ENCTICKS;
 	public static final double FEET = 12 * INCHES;
