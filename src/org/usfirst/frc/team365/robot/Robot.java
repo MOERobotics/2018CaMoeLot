@@ -427,7 +427,7 @@ public class Robot extends TimedRobot {
 		}
 
 	}
-
+	
 	public void autoPIDTurn(double desiredYaw) {
 		double currentYaw = navX.getYaw();
 		double offYaw = desiredYaw - currentYaw;

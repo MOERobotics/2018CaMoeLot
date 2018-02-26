@@ -13,18 +13,27 @@ public class CenterRightSwitchAutonomous3 {
 				robot.autoStep = 2;
 			}
 			else {
-				robot.autoStep = 2;
+				robot.driveRobot(.7, 0);
 			}
 			break;
 		case 2:
-			robot.turnToAngle(0);
+			robot.goStraight(45.0 * INCHES, 45, .5);
 			break;
 		case 3:
-			robot.driveRobot(0.1, 0.6);
-			robot.autoStep = 4;
+			if(robot.navX.getYaw() < 3) {
+				robot.distanceL.reset();
+				robot.distanceR.reset();
+				robot.autoStep = 4;
+			}
+			else {robot.driveRobot(0,.6);
+			
+			}
 			break;
 		case 4:
+			robot.goStraight(14 * INCHES,0,.7);
 			break;
+		case 5:
+			robot.driveRobot(0,0);
 		}
 	}
 }

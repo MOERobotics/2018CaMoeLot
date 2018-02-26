@@ -15,13 +15,13 @@ public class CenterRightSwitchAutonomous {
 			robot.turnToAngle(45);
 			break;
 		case 3:
-			robot.goStraight(72.7 * INCHES, 45, .5);//72.7 inches
+			robot.goStraight(74 * INCHES, 45, .5);//72.7 inches
 			break;
 		case 4:
 			robot.turnToAngle(0);
 			break;
 		case 5:
-			robot.goStraight(9 * INCHES, 0, .5);//9 inches
+			robot.goStraight(14 * INCHES, 0, .5);//9 inches
 			break;
 		case 6:
 			robot.pause(1.0);
