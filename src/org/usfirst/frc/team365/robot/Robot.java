@@ -54,6 +54,7 @@ public class Robot extends TimedRobot {
 	double  lastOffYaw  = 0;
 	boolean newPID      = true;
 	double  rampUpPower = 0;
+	boolean newTime = true;
 
 	// GameData Stuff
 	String  gameData = "";
@@ -100,7 +101,7 @@ public class Robot extends TimedRobot {
 		disable();
 	}};
 	int turnOnTargetCount = 0;
-	public static final double INCHES_TO_ENCTICKS = 110;
+	public static final double INCHES_TO_ENCTICKS = 45;
 	public static final double FEET_TO_ENCTICKS = 12 * INCHES_TO_ENCTICKS;
 
 	/**********
@@ -187,7 +188,8 @@ public class Robot extends TimedRobot {
 		autoLoopCounter++;
 		switch (autoRoutine) {
 		case 1:
-			RightLeftScaleCube.run(this);
+			//RightLeftScaleCube.run(this);
+			CenterRightSwitchAutonomous3.run(this);
 			break;
 		case 2:
 			RightSwitchThenCube.run(this);

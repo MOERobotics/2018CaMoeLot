@@ -25,31 +25,29 @@ public class CenterRightSwitchAutonomous3 {
 				robot.distanceR.reset();
 				robot.autoStep = 4;
 			}
-			else {robot.driveRobot(0,.6);
-			
+			else {
+				robot.driveRobot(0,.6);
 			}
 			break;
 		case 4:
 			AutoSimplify.goStraight(robot, 14 * INCHES,0,.7);
 			break;
 		case 5:
-			robot.driveRobot(0,0);
-		case 6:
 			AutoSimplify.pause(robot, 1.0);
 			break;
-		case 7:
+		case 6:
 			AutoSimplify.goStraight(robot, 48 * INCHES, 0, -.5);
 			break;
-		case 8:
+		case 7:
 			AutoSimplify.turnToAngle(robot, -90);
 			break;
-		case 9:
+		case 8:
 			AutoSimplify.goStraight(robot, 58 * INCHES, -90, .4);
 			break;
-		case 10:
+		case 9:
 			AutoSimplify.turnToAngle(robot, 0);
 			break;
-		case 11:
+		case 10:
 			AutoSimplify.goStraight(robot, 9 * INCHES, 0, .5);
 			break;
 		}
